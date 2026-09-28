@@ -209,7 +209,7 @@ async function main() {
 	}
 
 	if (args.usage) {
-		const res = await apiRequest("/v1/billing/usage", key);
+		const res = await apiRequest("/v1/usage", key);
 		const data = await res.json();
 		if (!res.ok) {
 			console.error(JSON.stringify(data, null, 2));
